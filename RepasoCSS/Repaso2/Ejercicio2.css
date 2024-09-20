@@ -1,0 +1,32 @@
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.btn-normal {
+    background-color: #3498DB;
+    color: white;
+    cursor: crosshair;
+}
+
+.btn-outline {
+    border: solid 2px #3498DB;
+    background: transparent;
+    color: #3498DB;
+    cursor: pointer;
+}
+
+.btn-alert {
+    background-color: #E74C3C;
+    color: white;
+    cursor: help;
+}
+
+button:hover {
+    transform:scale(1.1) ;
+}

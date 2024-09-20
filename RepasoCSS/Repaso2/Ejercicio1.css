@@ -1,0 +1,25 @@
+.curso li strong{ 
+    color: purple;
+}
+
+.body {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+ .body {
+    flex-direction: column;
+ }
+}
+
+@media (max-width: 1200px), (min-width: 600px) {
+ .curso {
+    float: left;
+ }
+}
+
+@media (min-width: 1200px) {
+    .body {
+        flex-direction: row;
+    }
+}

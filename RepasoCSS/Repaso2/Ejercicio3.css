@@ -1,0 +1,9 @@
+li[data-type="fruta"] {
+    color: white;
+    background-color: green;
+}
+
+li[data-type="verdura"] {
+    background-color: orange;
+    color: black;
+}

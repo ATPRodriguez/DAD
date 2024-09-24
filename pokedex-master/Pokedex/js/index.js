@@ -5,7 +5,7 @@ import Pokemon from './Pokemon.js';
 var pokemons = [];
 
 // Seleccionamos el elemento button del DOM usando querySelector 
-const button = document.querySelector("button");
+const button = document.getElementById("button");
 // Agregamos un event listener al botón para que se mantenga a la espera de hacer click en él
 // Cuando se recibe el click, se ejecuta la función flecha
 button.addEventListener("click", () => {
@@ -63,8 +63,11 @@ const showPokedex = async () => {
         // Para cada Pokemon, se crea una tarjeta con imágenes (vista frontal y trasera), el nombre y los tipos
         // Esta estructura HTML se añade dinámicamente al contenedor pokedex
         pokedex.innerHTML +=    `<div class="card">
+                                    <button class="shiny"/>
                                     <img src="${pokemons[i].pkm_back}">
                                     <img class="front" src="${pokemons[i].pkm_front}"><br>
+                                    <img class="frontS" src="${pokemons[i].pkm_shiny_front}"><br>
+                                    <img class="backS" src="${pokemons[i].pkm_shiny_back}"><br>
                                     ${pokemons[i].id}. ${pokemons[i].name}<br>
                                     <div class="types">
                                         ${tipo1} ${tipo2}

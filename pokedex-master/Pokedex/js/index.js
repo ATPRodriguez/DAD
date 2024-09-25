@@ -65,13 +65,14 @@ const showPokedex = async () => {
         pokedex.innerHTML +=    `<div class="card">
                                     <button class="shiny"/>
                                     <img src="${pokemons[i].pkm_back}">
+                                    <img class="backS" src="${pokemons[i].pkm_shiny_back}"><br>
                                     <img class="front" src="${pokemons[i].pkm_front}"><br>
                                     <img class="frontS" src="${pokemons[i].pkm_shiny_front}"><br>
-                                    <img class="backS" src="${pokemons[i].pkm_shiny_back}"><br>
                                     ${pokemons[i].id}. ${pokemons[i].name}<br>
                                     <div class="types">
                                         ${tipo1} ${tipo2}
                                     </div>
                                 </div>`
     }
+
 }

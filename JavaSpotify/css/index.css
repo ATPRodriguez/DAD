@@ -1,0 +1,70 @@
+body {
+    background-color: #555555;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.cover {
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+}
+
+.c1 {
+    background-image: url(../assets/images/cover1.jpg);
+    background-size: cover;
+}
+
+.c2 {
+    background-image: url(../assets/images/cover2.jpg);
+    background-size: cover;
+}
+
+.c3 {
+    background-image: url(../assets/images/cover3.jpg);
+    background-size: cover;
+}
+
+.vinyl {
+    position: relative;
+    margin: auto;
+    height: 180px;
+    width: 180px;
+    background-color: black;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.detail{
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background-color: #0399d2;
+    border-radius: 100%;
+}
+
+.label {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-color: #0399d2;
+    border-radius: 100%;
+}
+
+.hole {
+    margin: auto;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+
+.open .vinyl {
+    transform: translateX(150px);
+    transition: transform 3s;
+}

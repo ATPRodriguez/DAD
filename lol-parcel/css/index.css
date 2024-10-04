@@ -1,0 +1,95 @@
+body {
+    background-color: slategray;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    width: 600px;
+    height: 300px;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#campeones, #mapsShow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px 10px;
+    width: 100%;
+}
+
+.button, .maps {
+    color: white;
+    background-color: #d5b868;
+    background: rgb(213,184,104);
+    background: linear-gradient(160deg, rgb(212, 171, 56) 0%, rgb(240, 198, 143) 50%, rgba(212, 171, 56) 100%); 
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'DejaVu Sans Mono';
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0,2), 0 6px 20px 0 rgba(0, 0, 0, 0, 19);
+    border-radius: 8px;
+}
+
+.card, .map {
+    text-align: center;
+}
+
+.card .splash, .card .skin{
+    width: 100%;
+    border-radius: 20px;
+    border: 2px #d5b868 solid;
+}
+
+.inside {
+    display: none;
+    color: #e5c878;
+    text-shadow: #FC0 1px 0 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+.inside .icon {
+    margin-top: 10px;
+    border: 2px #e5c878 solid;
+    border-radius: 20px;
+}
+
+.skin {
+    display: none;
+    border: 2px #e5c878 solid;
+    border-radius: 20px;
+}
+
+.card:hover .splash {
+    display: none;
+}
+
+.card:hover .skin {
+    display: inline-block;
+}
+
+.card:hover .inside {
+    display: inline-block;
+}
+
+.map img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.map {
+    border: 2px #e5c878 solid;
+    border-radius: 20px;
+}

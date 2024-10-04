@@ -1,0 +1,80 @@
+body {
+  background-color: #708090;
+}
+
+.header {
+  text-align: center;
+}
+
+.logo {
+  width: 600px;
+  height: 300px;
+}
+
+.body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#campeones {
+  grid-gap: 10px 10px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  display: grid;
+}
+
+.button {
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0, 19);
+  background: linear-gradient(160deg, #d4ab38 0%, #f0c68f 50%, #d4ab38 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 15px 32px;
+  font-family: DejaVu Sans Mono;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.card {
+  text-align: center;
+  background-color: #000;
+  border: 2px solid #d5b868;
+  border-radius: 20px;
+}
+
+.card .splash {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.card .info, .card .icon {
+  color: #fff;
+  font-size: 18px;
+  display: none;
+}
+
+.card:hover .splash {
+  opacity: .65;
+  z-index: 0;
+  height: fit-content;
+  animation-name: splash;
+  animation-duration: 2s;
+}
+
+.card:hover .info, .card:hover .icon {
+  display: inline-block;
+}
+
+@keyframes splash {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: .65;
+  }
+}
+/*# sourceMappingURL=index.83ee0ee5.css.map */

@@ -52,8 +52,7 @@ const showCampeones = async () => {
     const campeonesList = document.getElementById("campeones");
     for(var i = 0; i < campeones.length; i++) {
         campeonesList.innerHTML +=    `<div class="card">                                    
-                                            <img class="splash" src="${campeones[i].splash}"/>
-                                            <img class="skin" src="${campeones[i].skin}"/>
+                                            <img class="splash" src="${campeones[i].splash}" onclick="src='${campeones[i].skin}'"/>
                                             <div class="inside">
                                                 <img class="icon" src="${campeones[i].icon}"/>
                                                 <br/>

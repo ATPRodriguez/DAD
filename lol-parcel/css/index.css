@@ -9,6 +9,7 @@ body {
 .logo {
     width: 600px;
     height: 300px;
+    cursor: pointer;
 }
 
 .body {
@@ -19,14 +20,15 @@ body {
 }
 
 #campeones, #mapsShow {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px 10px;
-    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
 }
 
 .button, .maps {
-    color: white;
+    color: black;
     background-color: #d5b868;
     background: rgb(213,184,104);
     background: linear-gradient(160deg, rgb(212, 171, 56) 0%, rgb(240, 198, 143) 50%, rgba(212, 171, 56) 100%); 
@@ -45,14 +47,13 @@ body {
     text-align: center;
 }
 
-.card .splash, .card .skin{
+.card .splash {
     width: 100%;
     border-radius: 20px;
     border: 2px #d5b868 solid;
 }
 
 .inside {
-    display: none;
     color: #e5c878;
     text-shadow: #FC0 1px 0 10px;
     border-radius: 20px;
@@ -66,22 +67,8 @@ body {
     border-radius: 20px;
 }
 
-.skin {
-    display: none;
-    border: 2px #e5c878 solid;
-    border-radius: 20px;
-}
-
-.card:hover .splash {
-    display: none;
-}
-
-.card:hover .skin {
-    display: inline-block;
-}
-
-.card:hover .inside {
-    display: inline-block;
+.card:hover {
+    cursor: pointer;
 }
 
 .map img{
@@ -92,4 +79,22 @@ body {
 .map {
     border: 2px #e5c878 solid;
     border-radius: 20px;
+}
+
+@media screen and (min-width: 700px) {
+    #campeones, #mapsShow {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px 30px;
+        width: 90%;
+    }   
+
+    .inside {
+        display: none;
+    }
+
+    .card:hover .inside {
+        display: inline-block;
+    }
 }

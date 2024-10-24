@@ -1,0 +1,20 @@
+header {
+    background-color: black;
+}
+
+header * {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-left: 10px;
+    list-style: none;
+}

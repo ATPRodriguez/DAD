@@ -16,7 +16,11 @@
   - [Paso 1](#1)
   - [Paso 2](#2)
 
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZ0bDVieTQ2ajJhYzJzNHF2cncxcnJ0OGhibjMwMmw3eDcyM3JvMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zzx4lMAuWS5YQ/giphy.gif" width="40" height="40" />   
+<div align="center">
+<img src="./img/Shinx_sprite.gif" width="100" height="100" />   
+<img src="./img/mew_sprite.gif" width="100" height="100" /> 
+<img src="./img/giratina_sprite.gif" width="100" height="100" />     
+</div>
 
 ___
 

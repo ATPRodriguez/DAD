@@ -2,6 +2,8 @@
 
 # ***_Whos That Pokemon_***
 
+<img src="./img/portada.png" alt="portada.png"/>
+
 </div>
 
 <div align="justify">
@@ -63,5 +65,18 @@ ___
         ```
 
         - Crear los ficheros de configuracion
+        ```bash
+        npx tailwindcss init -p
+        ```
 
+        - Incluir Tailwind al CSS (styles.css)
+        ```css
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        ```
+
+</div>
+<div align="center">
+  <img src="./img/ready.png" alt="ready.png"/>
 </div>
